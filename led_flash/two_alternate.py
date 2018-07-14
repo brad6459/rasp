@@ -2,7 +2,7 @@ from gpiozero import LED
 import time
 import random
 import math 
-
+sudo ifconfig
 a = 1
 counter = 0
 K = input("Time to alternate:")
