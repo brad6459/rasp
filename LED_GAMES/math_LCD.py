@@ -81,18 +81,18 @@ while play == 1:
 				answer = num1 + num2
 				user_answer = input("Your Answer:")
 				if answer == user_answer:
-					led = LED(23)
-					led.on()
-					time.sleep(1)
-					led.off()
+#					led = LED(23)
+#					led.on()
+#					time.sleep(1)
+#					led.off()
 					right_tally= right_tally + 1
-				else:
-					led = LED(12)
-					led.on()
-					time.sleep(1)
-					led.off()
+#				else:
+#					led = LED(12)
+#					led.on()
+#					time.sleep(1)
+#					led.off()
 					
-				del led
+#				del led
 				counter = counter + 1
 					 
 				
@@ -106,19 +106,19 @@ while play == 1:
 				answer = num1 - num2
 				user_answer = input("Your Answer:")
 				if answer == user_answer:
-					led = LED(23)
-					led.on()
-					time.sleep(1)
-					led.off()
+#					led = LED(23)
+#					led.on()
+#					time.sleep(1)
+#					led.off()
 					right_tally = right_tally + 1
 					
-				else:
-					led = LED(12)
-					led.on()
-					time.sleep(1)
-					led.off()
+#				else:
+#					led = LED(12)
+#					led.on()
+#					time.sleep(1)
+#					led.off()
 					
-				del led
+#				del led
 				counter = counter + 1
 							
 	#----------------------Multiplication------------------------------#	
@@ -130,18 +130,18 @@ while play == 1:
 				answer = num1 * num2
 				user_answer = input("Your Answer:")
 				if answer == user_answer:
-					led = LED(23)
-					led.on()
-					time.sleep(1)
-					led.off()
+#					led = LED(23)
+#					led.on()
+#					time.sleep(1)
+#					led.off()
 					right_tally = right_tally + 1
-				else:
-					led = LED(12)
-					led.on()
-					time.sleep(1)
-					led.off()
+#				else:
+#					led = LED(12)
+#					led.on()
+#					time.sleep(1)
+#					led.off()
 					
-				del led
+#				del led
 				counter = counter + 1
 	
 	#TELL THE USER  HOW THEY DID
