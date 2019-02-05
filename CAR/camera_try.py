@@ -1,8 +1,13 @@
-from picamera import PiCamera
-from time import sleep
+from gpiozero import LED
+import time
+import random
+import math 
 
-camera = PiCamera()
+led = LED(21)
+led.on()
+time.sleep(2)
+led.off()
 
-camera.start_preview()
-sleep(10)
-camera.stop_preview()
+
+
+	
