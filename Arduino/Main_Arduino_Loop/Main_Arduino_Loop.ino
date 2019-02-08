@@ -14,6 +14,7 @@ const int semi_aut_mod_pin = 12; //Semi-autonomous-mode
     //Define the Single Beam Pins
     const int trigPin_lidar1 = 2;
     const int monitorPin_lidar1 = 3;
+    unsigned long pulseWidth;
     
 const int discont_mod_pin = 13; //Discontinuity-mode
     //Define the ultrasonic Sensors pins
@@ -60,6 +61,9 @@ void setup()
 _____________________________________________________________________*/
 void loop() 
 {
+      Serial.begin(9600);
+     Serial.print("Beginning...");
+/*
     //Set all modes to reading the respective pins to verify current mode
     semi_aut_mod = digitalRead(semi_aut_mod_pin);  
     discont_mod = digitalRead(discont_mod_pin);
@@ -68,11 +72,13 @@ void loop()
    if (semi_aut_mod == HIGH)
       {
         MODE = 3;
+         Serial.print("Semi-Autonomous-Mode Activated");
       }
    
    else if (discont_mod == HIGH)
       {
         MODE = 4;
+           Serial.print("Discontinuity-Mode Activated");
       } 
    else
        {
@@ -87,8 +93,8 @@ void loop()
 
     switch(MODE)
     {
-    /*------------------------Discontinuity MODE---------------------*/
-      case 0:        
+//------------------------Discontinuity MODE------------------------
+      case 4:        
           Serial.begin(9600); //Starts the serial communication
           // Ultrasonics #1
               // Clears the trigPin
@@ -122,8 +128,8 @@ void loop()
               Serial.print("Distance#2: ");
               Serial.println(distance);
               break;
-    /*-----------------------Semi-autonomous-Mode--------------------*/
-    case 1:
+    //-----------------------Semi-autonomous-Mode--------------------
+    case 3:
               Serial.begin(115200); //Start Serial communications
               
               //Single-Beam#1
@@ -137,6 +143,6 @@ void loop()
                 break;
     }
     lastMODE = MODE;
-  }
+  }*/
 }
 

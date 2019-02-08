@@ -9,7 +9,10 @@ from time import sleep
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(3, GPIO.OUT)
+GPIO.setup(5, GPIO.OUT)
 
-GPIO.output(3,GPIO.LOW)
-time.sleep(5)
-GPIO.output(3,GPIO.HIGH)
+
+GPIO.output(5,GPIO.LOW)
+time.sleep(30)
+GPIO.output(5,GPIO.HIGH)
+GPIO.output(5,GPIO.LOW)
