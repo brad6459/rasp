@@ -61,10 +61,7 @@ void setup()
 _____________________________________________________________________*/
 void loop() 
 {
-      Serial.begin(9600);
-     Serial.print("Beginning...");
-/*
-    //Set all modes to reading the respective pins to verify current mode
+     //Set all modes to reading the respective pins to verify current mode
     semi_aut_mod = digitalRead(semi_aut_mod_pin);  
     discont_mod = digitalRead(discont_mod_pin);
    
@@ -143,6 +140,6 @@ void loop()
                 break;
     }
     lastMODE = MODE;
-  }*/
+  }
 }
 
